@@ -56,17 +56,11 @@ body{
 }
 
 #area-texto-perfil {
-  height: 6rem;
-  width: 60%;
-  position: relative;
-  transform: translate(0rem, -3rem);
-  max-width: 60%;
-  resize: none;
-  border: 1px dashed rgb(128, 94, 0);
+  display: none;
 }
 
 .status {
-  max-height: 350px;
+  height: 230px;
 }
 
 
@@ -77,6 +71,15 @@ body{
   border-radius: 50px;
 
 }
+.img-suggestion:hover{
+  content: ;
+  width: 2.8rem;
+  opacity:0.9;
+  transition: 0.8s;
+  height: 2.8rem;
+
+}
+
 .suggestion-name{
   transform: translate(2.59rem, -1.8rem);
 }
@@ -146,10 +149,8 @@ svg {
 }
 .col-6, .col-10 .post-size {
   text-align: center;
-  margin: 5px;
-  width: 95%;
+  width: 100%;
   max-height: 300px;
-  max-width: fit-content;
   border-radius: 5px;
 }
 
@@ -168,7 +169,7 @@ svg {
 }
 
 .col-8 .btn-post {
-  width: 22%;
+  width: 50px;
   margin: auto;
 }
 
@@ -220,7 +221,7 @@ svg {
   margin-bottom: 10px;
 }
 
-.col-10 svg{
+ svg{
   transform: translate(-9px, 0px);
 
 }
@@ -278,7 +279,9 @@ svg {
   color:cornsilk;
   padding: auto;
 }
-
+.colunaA{
+  display: none;
+}
 .col-8 #nome{
   color: black;
 }
@@ -331,6 +334,18 @@ svg {
     display: none;
   }
 
+  .coluna4{
+    display: none;
+  }
+
+  .colunaDisplay{
+    display: none;
+  }
+
+  .colunaA{
+    display: inline-block;
+  }
+
   .status-foto {
     margin-right: 2rem;
     margin-left: 1.2000000000000002rem;
@@ -339,12 +354,17 @@ svg {
 }
 
 #area-texto {
+  display: none;
   margin-top: 11px;
   height: 6rem;
   width: 119px;
   position: absolute;
   resize: none;
   border: 1px dashed rgb(128, 94, 0);
+}
+
+#area-texto-perfil {
+display: none;
 }
 
 .col-8 .btn-post {
@@ -355,18 +375,40 @@ svg {
     display: inline-block;
     margin-left: 0rem;
     margin-bottom: 0;
-    transform: translate(0,0);
-    width: 90px;
+    transform: translate(215px,-98px);
+    width: 97px;
 }
 
 #alinhamento .btn-status {
   display: flex;
-  position: relative;
-  margin-left: 0rem;
-  margin-bottom: 0;
-  transform: translate(0,0);
-  width: 90px;
+    position: relative;
+    margin-left: 0rem;
+    margin-bottom: 0;
+    transform: translate(118px, -58px);
+    width: 89px;
 }
+.row {
+  --bs-gutter-x: 0;
+  --bs-gutter-y: 0;
+}
+
+.col-8 {
+  flex: 0 0 auto;
+  width: 100%;
+}
+
+#alinhamento .btn-status-foto-profile {
+  display: inline-block;
+  transform: translate(-18.65rem, -8rem);
+  width: 94px;
+}
+.btn-status-profile {
+display: inline-block;
+transform: translate(-10.649999999999999rem, -5rem);
+width: 96px;
+}
+}
+
 
 }
 
@@ -386,9 +428,65 @@ svg {
       resize: none;
       border: 1px dashed rgb(128, 94, 0);
   }
+  .colunaDisplay{
+    display: none;
+  }
+
+  .colunaA{
+    display: inline-block;
+  }
+  #area-texto-perfil {
+    display: none;
+    }
     .coluna2{
       display: none;
     }
+
+    .coluna4{
+      display: none;
+    }
+    
+
+    .row {
+      --bs-gutter-x: 0rem;
+      --bs-gutter-y: 0;
+    }
+    #homeProfile .row {
+      --bs-gutter-x:1.5rem;
+      --bs-gutter-y: 0;
+    }
+
+    .col-8 {
+      flex: 0 0 auto;
+      width: 100%;
+  }
+
+  #alinhamento .btn-status-foto-profile {
+    display: inline-block;
+    transform: translate(0, );
+    width: 94px;
+}
+#alinhamento .btn-status-profile {
+  display: inline-block;
+  transform: translate(0, 0rem);
+  width: 93px;
+}
+
+#alinhamento .btn-status-foto-profile {
+  display: inline-block;
+  position: relative;
+  transform: translate(-18.65rem, -8rem);
+  width: 94px;
+}
+.btn-status-profile {
+display: inline-block;
+position: relative;
+transform: translate(-10.649999999999999rem, -5rem);
+width: 96px;
+}
+
+
+
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
@@ -403,6 +501,7 @@ svg {
   }
 
   #area-texto {
+    display: none;
     height: 6rem;
     width: 60%;
     position: relative;
@@ -411,17 +510,129 @@ svg {
     resize: none;
     border: 1px dashed rgb(128, 94, 0);
   }
+
+  #area-texto-perfil {
+    display: none;
+    }
+
+  #alinhamento .btn-status {
+  display: flex;
+    position: relative;
+    margin-left: 0rem;
+    margin-bottom: 0;
+    transform: translate(118px, -58px);
+    width: 89px;
+}
+
+#alinhamento .btn-status-foto {
+  display: inline-block;
+  margin-left: 0rem;
+  margin-bottom: 0;
+  transform: translate(215px,-98px);
+  width: 97px;
+}
+
+.row {
+  --bs-gutter-x: 0;
+  --bs-gutter-y: 0;
+}
+
+#homeProfile .row {
+  --bs-gutter-x:1.5rem;
+  --bs-gutter-y: 0;
+}
+  .coluna3{
+    display: none;
+  }
+
+  .col-8 {
+    flex: 0 0 auto;
+    width: 66%;
+}
   
 } 
 
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
-  .example {background: orange;}
+
+  #alinhamento .btn-status {
+    display: flex;
+    position: relative;
+    margin-left: 0rem;
+    margin-bottom: 0;
+    transform: translate(417px, -122px);
+    width: 89px;
+}
+
+  #alinhamento .btn-status-foto {
+    display: inline-block;
+    margin-left: 0rem;
+    margin-bottom: 0;
+    transform: translate(313px,-161px);
+    width: 97px;
+}
+
+#area-texto-perfil {
+  display: inline-block;
+  height: 6rem;
+  width: 64%;
+  position: relative;
+  transform: translate(-2rem, -3rem);
+  resize: none;
+  border: 1px dashed rgb(128, 94, 0);
+}
+
+#homeProfile .row {
+  --bs-gutter-x:1.5rem;
+  --bs-gutter-y: 0;
+}
+
+.colunaDisplay{
+  display: inline-block;
+}
+
+.colunaA{
+  display: none;
+}
+
+
+  
+#area-texto {
+  display: block;
+  height: 6rem;
+  width: 66%;
+  position: relative;
+  transform: translate(10rem, -8rem);
+  max-width: 70%;
+  resize: none;
+  border: 1px dashed rgb(128, 94, 0);
+}
+  .coluna4{
+    display: inline-block;
+  }
+  #alinhamento .btn-status-foto-profile {
+    display: flex;
+    margin-left: 26.1rem;
+    margin-bottom: 0.7rem;
+    transform: translate(-2.8000000000000007rem, -6rem);
+    width: 90px;
+}
+
+.btn-status-profile {
+  display: flex;
+  margin-left: 26.1rem;
+  margin-bottom: 0.7rem;
+  transform: translate(4.35rem, -3rem);
+  width: 90px;
+}
+
 } 
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
-  .example {background: pink;}
-}
+  #homeProfile .row {
+    --bs-gutter-x:1.5rem;
+    --bs-gutter-y: 0;
+  }}
 
  
